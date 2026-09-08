@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+const base = import.meta.env.BASE_URL;
+
 const certificatesData = [
   {
     id: 'oracle-ai',
@@ -12,7 +14,7 @@ const certificatesData = [
     badge: 'ORACLE OFFICIAL',
     badgeColor: 'border-red-600/40 text-red-400 bg-red-600/10',
     description: 'Accreditation validating core knowledge of Artificial Intelligence, Machine Learning workloads, Generative AI fundamentals, and enterprise Oracle Cloud Infrastructure deployments.',
-    image: '/certificate_oracle_ai.jpg',
+    image: `${base}certificate_oracle_ai.jpg`,
     verifyUrl: 'https://www.linkedin.com/in/cse-prince-kumar/',
     verifyLabel: 'Verify on LinkedIn'
   },
@@ -27,7 +29,7 @@ const certificatesData = [
     badge: 'INFOSYS SPRINGBOARD',
     badgeColor: 'border-blue-600/40 text-blue-400 bg-blue-600/10',
     description: 'Accredited coursework covering state-of-the-art AI paradigms, search algorithms, knowledge representation, NLP foundational concepts, and ethical AI applications.',
-    image: '/certificate_infosys_ai.png',
+    image: `${base}certificate_infosys_ai.png`,
     verifyUrl: 'https://verify.onwingspan.com',
     verifyLabel: 'Verify on Wingspan'
   },
@@ -42,7 +44,7 @@ const certificatesData = [
     badge: 'EDUTECH HUB',
     badgeColor: 'border-amber-600/40 text-amber-400 bg-amber-600/10',
     description: 'Certified program on mental resilience, peak productivity habits, and holistic well-being for high-performing technical engineering professionals.',
-    image: '/certificate_edutech_habits.png',
+    image: `${base}certificate_edutech_habits.png`,
     verifyUrl: 'mailto:info@edutechhub.in',
     verifyLabel: 'Verify via Email'
   },
@@ -57,9 +59,9 @@ const certificatesData = [
     badge: 'WNS CARES FOUNDATION',
     badgeColor: 'border-emerald-600/40 text-emerald-400 bg-emerald-600/10',
     description: 'Trained and certified in cybersecurity education, personally empowering 50-60 students with practical cyberbullying prevention, digital hygiene, and personal data privacy.',
-    image: '/certificate_wns_cybersmart.png',
-    pdfUrl: '/Prince_Kumar_CyberSmart.pdf',
-    verifyUrl: '/Prince_Kumar_CyberSmart.pdf',
+    image: `${base}certificate_wns_cybersmart.png`,
+    pdfUrl: `${base}Prince_Kumar_CyberSmart.pdf`,
+    verifyUrl: `${base}Prince_Kumar_CyberSmart.pdf`,
     verifyLabel: 'Download Full PDF'
   }
 ];

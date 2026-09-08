@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+const base = import.meta.env.BASE_URL;
+
 const ResumeModal = ({ isOpen, onClose }) => {
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -39,7 +41,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
 
           <div className="flex items-center gap-3">
             <a
-              href="/Prince_Kumar_CV.html"
+              href={`${base}Prince_Kumar_CV.html`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-3 py-1.5 rounded bg-white/10 hover:bg-white/20 text-xs font-mono tracking-wider transition-colors flex items-center gap-1.5 text-white"
@@ -51,7 +53,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
             </a>
 
             <a
-              href="/Prince_Kumar_CV.html"
+              href={`${base}Prince_Kumar_CV.html`}
               download="Prince_Kumar_CV.html"
               className="px-3.5 py-1.5 rounded bg-red-600 hover:bg-red-700 text-xs font-mono font-bold tracking-wider transition-all flex items-center gap-1.5 shadow-[0_0_15px_rgba(229,9,20,0.6)]"
             >
@@ -206,7 +208,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
                 </div>
                 <div className="flex items-center gap-3 shrink-0">
                   <span className="text-xs font-mono text-white/60">Aug'25</span>
-                  <a href="/certificate_oracle_ai.jpg" target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded bg-red-600/20 text-red-400 border border-red-600/40 text-[11px] font-mono hover:bg-red-600 hover:text-white transition-colors">
+                  <a href={`${base}certificate_oracle_ai.jpg`} target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded bg-red-600/20 text-red-400 border border-red-600/40 text-[11px] font-mono hover:bg-red-600 hover:text-white transition-colors">
                     View
                   </a>
                 </div>
@@ -218,7 +220,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
                 </div>
                 <div className="flex items-center gap-3 shrink-0">
                   <span className="text-xs font-mono text-white/60">Oct' 25</span>
-                  <a href="/certificate_edutech_habits.png" target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded bg-red-600/20 text-red-400 border border-red-600/40 text-[11px] font-mono hover:bg-red-600 hover:text-white transition-colors">
+                  <a href={`${base}certificate_edutech_habits.png`} target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded bg-red-600/20 text-red-400 border border-red-600/40 text-[11px] font-mono hover:bg-red-600 hover:text-white transition-colors">
                     View
                   </a>
                 </div>
@@ -230,7 +232,19 @@ const ResumeModal = ({ isOpen, onClose }) => {
                 </div>
                 <div className="flex items-center gap-3 shrink-0">
                   <span className="text-xs font-mono text-white/60">Feb'26</span>
-                  <a href="/certificate_infosys_ai.png" target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded bg-red-600/20 text-red-400 border border-red-600/40 text-[11px] font-mono hover:bg-red-600 hover:text-white transition-colors">
+                  <a href={`${base}certificate_infosys_ai.png`} target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded bg-red-600/20 text-red-400 border border-red-600/40 text-[11px] font-mono hover:bg-red-600 hover:text-white transition-colors">
+                    View
+                  </a>
+                </div>
+              </li>
+
+              <li className="p-3 bg-white/5 rounded-lg border border-white/5 flex items-center justify-between gap-3">
+                <div>
+                  <span className="text-white">Digital Safety & Cybersecurity Educator (CyberSmart) | <strong className="text-red-400">WNS Cares Foundation</strong></span>
+                </div>
+                <div className="flex items-center gap-3 shrink-0">
+                  <span className="text-xs font-mono text-white/60">Jul'26</span>
+                  <a href={`${base}Prince_Kumar_CyberSmart.pdf`} target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded bg-red-600/20 text-red-400 border border-red-600/40 text-[11px] font-mono hover:bg-red-600 hover:text-white transition-colors">
                     View
                   </a>
                 </div>
